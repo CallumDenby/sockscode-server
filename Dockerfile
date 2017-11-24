@@ -1,4 +1,5 @@
 FROM node:6.12.0-alpine AS builder
+RUN apk add --no-cache git
 WORKDIR /src
 ADD package.json .
 RUN yarn
