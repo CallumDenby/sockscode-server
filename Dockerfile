@@ -1,4 +1,4 @@
-FROM node:8.9.1-alpine AS builder
+FROM node:6.12.0-alpine AS builder
 WORKDIR /src
 ADD package.json .
 RUN yarn
